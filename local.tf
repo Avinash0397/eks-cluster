@@ -10,7 +10,7 @@ locals {
   region                                  = lookup(local.k8s_info, "region")
   env                                     = lookup(local.k8s_info, "env")
   vpc_id                                  = vpc-0cc3ab2dbe259dec0
-  vpc_cidr                                = 10.0.0.0/16
+  vpc_cidr                                = "10.0.0.0/16"
   public_subnet_ids                       = subnet-0fecaf4d8c34fce2b
   cluster_version                         = lookup(local.k8s_info, "cluster_version")
   cluster_enabled_log_types               = lookup(local.k8s_info, "cluster_enabled_log_types")
