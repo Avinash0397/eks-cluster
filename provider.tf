@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "devsecops-backend-codedevops"
-    key    = "secops-dev.tfstae9"
+    key    = "avinash-bucket-097"
     region = "ap-south-1"
   }
 }
