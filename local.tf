@@ -9,9 +9,9 @@ locals {
   cluster_name                            = lookup(local.k8s_info, "cluster_name")
   region                                  = lookup(local.k8s_info, "region")
   env                                     = lookup(local.k8s_info, "env")
-  vpc_id                                  = lookup(local.k8s_info, "vpc_id")
-  vpc_cidr                                = lookup(local.k8s_info, "vpc_cidr")
-  public_subnet_ids                       = lookup(local.k8s_info, "public_subnet_ids")
+  vpc_id                                  = vpc-0cc3ab2dbe259dec0
+  vpc_cidr                                = 10.0.0.0/16
+  public_subnet_ids                       = subnet-0fecaf4d8c34fce2b
   cluster_version                         = lookup(local.k8s_info, "cluster_version")
   cluster_enabled_log_types               = lookup(local.k8s_info, "cluster_enabled_log_types")
   eks_managed_node_groups                 = lookup(local.k8s_info, "eks_managed_node_groups")
