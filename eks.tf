@@ -22,8 +22,8 @@ module "eks" {
     }
   }
 
-  vpc_id     = vpc-0cc3ab2dbe259dec0
-  subnet_ids = subnet-0fecaf4d8c34fce2b
+  vpc_id     = "vpc-0cc3ab2dbe259dec0"
+  subnet_ids = ["subnet-0fecaf4d8c34fce2b"]
   eks_managed_node_group_defaults = {
     ## This instance type (m6a.large) is a placeholder and will not be used in the actual deployment.
 
