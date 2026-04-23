@@ -14,11 +14,11 @@ terraform {
     }
     random = {
       source  = "hashicorp/random"
-      version = ">= 3.6.0"
+      version = ">= 4.0.0"
     }
     template = {
       source  = "hashicorp/template"
-      version = ">= 2.2.0"
+      version = ">= 4.0.0"
     }
   }
 }
