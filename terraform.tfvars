@@ -1,7 +1,7 @@
 environments = {
   default = {
     # Global variables
-    cluster_name                   = "codedevops-cluster"
+    cluster_name                   = "avinash-cluster"
     env                            = "default"
     region                         = "ap-south-1"
     vpc_id                         = "vpc-0cc3ab2dbe259dec0"
