@@ -4,9 +4,9 @@ environments = {
     cluster_name                   = "codedevops-cluster"
     env                            = "default"
     region                         = "ap-south-1"
-    vpc_id                         = "vpc-02af529e05c41b6bb"
+    vpc_id                         = "vpc-0cc3ab2dbe259dec0"
     vpc_cidr                       = "10.0.0.0/16"
-    public_subnet_ids              = ["subnet-09aeb297a112767b2", "subnet-0e25e76fb4326ce99"]
+    public_subnet_ids              = ["subnet-0fecaf4d8c34fce2b"]
     cluster_version                = "1.29"
     cluster_endpoint_public_access = true
     ecr_names                      = ["codedevops"]
@@ -17,7 +17,7 @@ environments = {
         min_size       = 1
         max_size       = 1
         desired_size   = 1
-        instance_types = ["m5a.xlarge"]
+        instance_types = ["t3.micro"]
         capacity_type  = "SPOT"
         disk_size      = 60
         ebs_optimized  = true
@@ -38,7 +38,7 @@ environments = {
         user_arn = []
       }
       admin = {
-        user_arn = ["arn:aws:iam::434605749312:root"]
+        user_arn = ["arn:aws:iam::342831714463:user/kubernetes"]
       }
     }
     # EKS Addons variables 
